@@ -1,0 +1,67 @@
+<?php 
+
+function _block_imageblock_get_content($class, $text, $image) {
+	global $base_url;
+	$content = '<div class="' . $class . '">
+					<p class="' . $class . '-text">' . t($text) . '</p>
+					<img class="' . $class . '-image" src="' . $base_url . '/' . path_to_theme() .'/images/' . $image . '"> 
+				</div>';
+	return $content;
+}
+
+function customblocks_block_info(){
+
+	$blocks['block_what_is_sh'] = array(
+		'info' => t('What is Smart Home'),
+		'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+	);
+
+  	$blocks['block_why_use'] = array(
+    	'info' => t('Why to use Smart Home block'),
+    	'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  	);
+
+  	$blocks['block_what_i_need'] = array(
+    	'info' => t('Why do I need to use Smart Home block'),
+    	'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  	);
+
+	$blocks['block_how_to'] = array(
+    	'info' => t('How to use Smart Home block'),
+    	'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  	);
+
+	$blocks['block_price'] = array(
+    	'info' => t('Smart Home price block'),
+    	'cache' => DRUPAL_CACHE_PER_ROLE, //Default
+  	);
+
+  	return $blocks;
+}
+
+function customblocks_block_view($delta = '') {
+  $block['subject'] = '';
+  switch($delta){
+    case 'block_what_is_sh':
+    	$text = 'Smart Home es un sistema destinado a ofrecer al usuario la posibilidad de poder consultar el consumo energético de su hogar en tiempo real y de una manera clara y sencilla.';
+      	$block['content'] = _block_imageblock_get_content('promo', $text, 'promo/what_it_is.png');
+     	break;
+    case 'block_why_use':
+    	$text = 'Smart Home es una forma sencilla de conocer en todo momento su consumo energético. En base a estos datos usted podrá tomar medidas	con el fin de reducir dicho consumo, lo cual contribuirá a una reducción en su factura mensual.';
+      	$block['content'] = _block_imageblock_get_content('promo', $text, 'promo/why_use.png');
+      	break;
+    case 'block_what_i_need':
+    	$text = 'Todo lo que necesitas para poder utilizar Smart Home es adquirir el dispositivo ODEnergy, el cuál será el encargado de llevar a cabo las mediciones de su consumo eléctrico y posteriormente deberá registrarse en nuestra web y seguir los pasos que se le indicarán para poder configurar su dipositivo y así conocer su consumo.';
+      	$block['content'] = _block_imageblock_get_content('promo', $text, 'promo/what_you_need.png');
+      	break;
+    case 'block_how_to':
+    	$text = 'Para poder ver su consumo energético tan sólo tiene que iniciar sesión o registrarse sin aún no lo ha hecho. Una vez dentro, podrá ver cuál es su consumo actual, así como realizar consultas sobre su consumo en días o meses anteriores. Támbién dispondrá de la posibilidad de descargar sus datos de consumo en diferentes formatos.';
+      	$block['content'] = _block_imageblock_get_content('promo', $text, 'promo/how_to.png');
+      	break;
+    case 'block_price':
+    	$text = 'Lo mejor de Smart Home es que ¡¡es completamente GRATUITO!! Sólo tendrá que registrarse en nuestra página web y empezar a utilizar nuestros servicios, sin restricciones de ningún tipo.';
+       	$block['content'] = _block_imageblock_get_content('promo', $text, 'promo/price.png');
+  }
+  return $block;
+  
+}

@@ -1,0 +1,236 @@
+/*
+ * @file
+ * Font styling
+ */
+@font-face {
+  font-family: "SansationRegular";
+  src: url("../fonts/Sansation_Regular-webfont.eot");
+  src: url("../fonts/Sansation_Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Sansation_Regular-webfont.woff") format("woff"), url("../fonts/Sansation_Regular-webfont.ttf") format("truetype"), url("../fonts/Sansation_Regular-webfont.svg#SansationRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SansationLight";
+  src: url("../fonts/Sansation_Light-webfont.eot");
+  src: url("../fonts/Sansation_Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Sansation_Light-webfont.woff") format("woff"), url("../fonts/Sansation_Light-webfont.ttf") format("truetype"), url("../fonts/Sansation_Light-webfont.svg#SansationLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SansationBold";
+  src: url("../fonts/Sansation_Bold-webfont.eot");
+  src: url("../fonts/Sansation_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Sansation_Bold-webfont.woff") format("woff"), url("../fonts/Sansation_Bold-webfont.ttf") format("truetype"), url("../fonts/Sansation_Bold-webfont.svg#SansationBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "DroidSerifRegular";
+  src: url("../fonts/DroidSerif-Regular-webfont.eot");
+  src: url("../fonts/DroidSerif-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-Regular-webfont.woff") format("woff"), url("../fonts/DroidSerif-Regular-webfont.ttf") format("truetype"), url("../fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "DroidSerifItalic";
+  src: url("../fonts/DroidSerif-Italic-webfont.eot");
+  src: url("../fonts/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-Italic-webfont.woff") format("woff"), url("../fonts/DroidSerif-Italic-webfont.ttf") format("truetype"), url("../fonts/DroidSerif-Italic-webfont.svg#DroidSerifItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "DroidSerifBold";
+  src: url("../fonts/DroidSerif-Bold-webfont.eot");
+  src: url("../fonts/DroidSerif-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-Bold-webfont.woff") format("woff"), url("../fonts/DroidSerif-Bold-webfont.ttf") format("truetype"), url("../fonts/DroidSerif-Bold-webfont.svg#DroidSerifBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "DroidSerifBoldItalic";
+  src: url("../fonts/DroidSerif-BoldItalic-webfont.eot");
+  src: url("../fonts/DroidSerif-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff"), url("../fonts/DroidSerif-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/DroidSerif-BoldItalic-webfont.svg#DroidSerifBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, active, hover, selected {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  line-height: 1.5;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: SansationLight, Times, Arial, serif;
+  font-size: 100%;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px; }
+
+body {
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke; }
+  body #page {
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: #0b0d12 url(../images/bg-pattern-t.gif) no-repeat center top; }
+    body #page #header {
+      position: fixed;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      background: #0b0d12 url(../images/bg-pattern-t.gif) no-repeat center top;
+      z-index: 15; }
+      body #page #header h1, body #page #header h2, body #page #header h3, body #page #header h4, body #page #header a {
+        color: whitesmoke; }
+      body #page #header .header-first {
+        position: relative;
+        margin: 0px auto;
+        height: 100%;
+        width: 1400px;
+        display: table; }
+        body #page #header .header-first #branding {
+          background-color: transparent;
+          height: auto;
+          width: auto;
+          float: left; }
+          body #page #header .header-first #branding #logo, body #page #header .header-first #branding #name-and-slogan {
+            padding: 0px;
+            margin: auto;
+            text-align: center; }
+            body #page #header .header-first #branding #logo h1, body #page #header .header-first #branding #logo a, body #page #header .header-first #branding #name-and-slogan h1, body #page #header .header-first #branding #name-and-slogan a {
+              height: 55px;
+              font-size: 1.7em;
+              padding-top: 5%;
+              line-height: 100%; }
+            body #page #header .header-first #branding #logo h1:hover, body #page #header .header-first #branding #logo a:hover, body #page #header .header-first #branding #name-and-slogan h1:hover, body #page #header .header-first #branding #name-and-slogan a:hover {
+              text-shadow: -1px 1px 8px whitesmoke, 1px -1px 8px whitesmoke;
+              text-decoration: none; }
+        body #page #header .header-first .region-header {
+          float: right;
+          margin-top: 1%; }
+          body #page #header .header-first .region-header .block-menu {
+            margin-bottom: 0px; }
+            body #page #header .header-first .region-header .block-menu .menu .leaf {
+              list-style-image: none;
+              list-style-type: none;
+              width: auto;
+              float: left; }
+              body #page #header .header-first .region-header .block-menu .menu .leaf a {
+                color: silver;
+                font-size: 1.5em;
+                margin: 0px 10px 0px 10px; }
+              body #page #header .header-first .region-header .block-menu .menu .leaf a:hover {
+                color: whitesmoke;
+                text-shadow: -1px 1px 8px whitesmoke, 1px -1px 8px whitesmoke;
+                text-decoration: none; }
+    body #page .header-second {
+      min-height: 500px; }
+    body #page #menu-bar {
+      margin: 0;
+      background-color: whitesmoke; }
+      body #page #menu-bar h1, body #page #menu-bar h2, body #page #menu-bar h3, body #page #menu-bar h4, body #page #menu-bar a {
+        color: #363636; }
+      body #page #menu-bar .menu-bar-wrapper {
+        width: auto;
+        text-align: center; }
+        body #page #menu-bar .menu-bar-wrapper p {
+          width: auto;
+          color: black; }
+    body #page #menu-bar, body #page #footer, body #page #main-content-SH {
+      height: auto;
+      width: 100%;
+      float: left;
+      clear: left; }
+    body #page #main-content-SH {
+      background-color: whitesmoke;
+      min-height: 2048px; }
+      body #page #main-content-SH h1, body #page #main-content-SH h2, body #page #main-content-SH h3, body #page #main-content-SH h4, body #page #main-content-SH a {
+        color: #363636; }
+      body #page #main-content-SH #main-content-SH-wrapper {
+        width: 1400px;
+        min-height: 2000px;
+        display: table;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        body #page #main-content-SH #main-content-SH-wrapper .region-main-content-header {
+          margin: auto;
+          width: 100%;
+          min-height: 80px;
+          position: relative;
+          text-align: center;
+          float: left; }
+        body #page #main-content-SH #main-content-SH-wrapper #columns {
+          text-align: center; }
+          body #page #main-content-SH #main-content-SH-wrapper #columns .content-column {
+            /* */
+            float: none;
+            margin: 10px auto;
+            width: 60%;
+            /*box-shadow: 0px 0px 15px 7px #888 */ }
+    body #page #footer {
+      background: #0b0d12 url(../images/bg-pattern.gif) no-repeat center top; }
+
+#main-content-SH #main-content-SH-wrapper .block-customblocks {
+  width: 100%;
+  float: left;
+  background-color: transparent; }
+  #main-content-SH #main-content-SH-wrapper .block-customblocks .promo {
+    display: table;
+    height: 350px;
+    width: 40%; }
+    #main-content-SH #main-content-SH-wrapper .block-customblocks .promo .promo-text {
+      display: table-cell;
+      text-align: justify;
+      vertical-align: middle;
+      height: auto; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-is-sh {
+  background: transparent url(../images/promo/what_it_is_grey.png) top right no-repeat; }
+  #main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-is-sh .promo {
+    float: left; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-is-sh:hover {
+  background: transparent url(../images/promo/what_it_is_trans.png) top right no-repeat; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-why-use {
+  background: transparent url(../images/promo/why_use_grey.png) top left no-repeat; }
+  #main-content-SH #main-content-SH-wrapper #block-customblocks-block-why-use .promo {
+    float: right; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-why-use:hover {
+  background: transparent url(../images/promo/why_use_trans.png) top left no-repeat; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-i-need {
+  background: transparent url(../images/promo/what_i_need_grey.png) top right no-repeat; }
+  #main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-i-need .promo {
+    float: left; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-what-i-need:hover {
+  background: transparent url(../images/promo/what_i_need_trans.png) top right no-repeat; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-how-to {
+  background: transparent url(../images/promo/how_to_grey.png) top left no-repeat; }
+  #main-content-SH #main-content-SH-wrapper #block-customblocks-block-how-to .promo {
+    float: right; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-how-to:hover {
+  background: transparent url(../images/promo/how_to_trans.png) top left no-repeat; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-price {
+  background: transparent url(../images/promo/right_price_grey.png) top right no-repeat; }
+  #main-content-SH #main-content-SH-wrapper #block-customblocks-block-price .promo {
+    float: left; }
+#main-content-SH #main-content-SH-wrapper #block-customblocks-block-price:hover {
+  background: transparent url(../images/promo/right_price_trans.png) top right no-repeat; }

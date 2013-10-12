@@ -1,0 +1,24 @@
+
+SmartHome/httpdocs/*.*
+SmartHome/httpdocs/.*
+SmartHome/httpdocs/modules
+SmartHome/httpdocs/themes
+SmartHome/httpdocs/includes
+SmartHome/httpdocs/misc
+SmartHome/httpdocs/profiles/minimal
+SmartHome/httpdocs/profiles/standard
+SmartHome/httpdocs/profiles/testing
+SmartHome/httpdocs/scripts
+SmartHome/example.sites.php
+SmartHome/httpdocs/sites/README.txt
+SmartHome/httpdocs/sites/all/modules/custom/README.txt
+SmartHome/httpdocs/sites/all/themes/README.txt
+
+SmartHome/httpdocs/sites/all/modules/contrib
+SmartHome/httpdocs/sites/default/files
+SmartHome/httpdocs/sites/default/settings.php
+SmartHome/httpdocs/sites/all/themes/adaptivetheme
+#httpdocs/sites/all/themes/bootstrap
+
+"Data Generator"/*
+SmartHomeServer/*

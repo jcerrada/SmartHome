@@ -1,0 +1,37 @@
+name = Smarthome
+description = SmartHome's starter profile.
+version = VERSION
+core = 7.x
+dependencies[] = block
+dependencies[] = dblog
+
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = coffee
+dependencies[] = module_filter
+dependencies[] = ctools
+dependencies[] = contextual
+
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = devel
+dependencies[] = ds
+dependencies[] = ds_ui
+dependencies[] = features
+dependencies[] = field_ui
+dependencies[] = context_ui
+
+dependencies[] = file
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = views_ui
